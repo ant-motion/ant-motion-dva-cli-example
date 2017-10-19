@@ -10,14 +10,21 @@
     "install-node": "6.11.1"
   },
   "dependencies": {
+    "antd": "^2.13.6",
     "babel-runtime": "^6.9.2",
     "dva": "^2.0.3",
+    "enquire": "^0.0.2",
+    "rc-banner-anim": "^1.0.0",
+    "rc-queue-anim": "1.x",
+    "rc-scroll-anim": "2.x",
+    "rc-tween-one": "1.x",
     "react": "^15.4.0",
     "react-dom": "^15.4.0"
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
     "babel-plugin-dva-hmr": "^0.3.2",
+    "babel-plugin-import": "^1.6.2",
     "babel-plugin-transform-runtime": "^6.9.0",
     "eslint": "^3.12.2",
     "eslint-config-airbnb": "^13.0.0",

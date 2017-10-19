@@ -1,5 +1,6 @@
 {
   "entry": "src/index.js",
+  "disableCSSModules": true,
   "env": {
     "development": {
       "extraBabelPlugins": [
@@ -12,5 +13,9 @@
         "transform-runtime"
       ]
     }
-  }
+  },
+  "extraBabelPlugins": [
+    "transform-runtime",
+    ["import", { "libraryName": "antd", "style": true }]
+  ]
 }
