@@ -4,9 +4,9 @@
 
 请参照[documentation](https://github.com/ant-motion/ant-motion-dva-cli-example/blob/master/src/routes/Home/documentation.md)里的步骤。。
 
-### 0.8 的改动
+### 2.0 的改动
 
-如果不是 dva-cli 脚手架，去除 index.js 里的 show 相关代码：
+2.0 里的改动是依据 dva 2.x 脚手脚的改动而改动，如果不是 dva-cli 脚手架，去除 index.js 里的 show 相关代码：
 
 1. stage 里的 [show](https://github.com/ant-motion/ant-motion-dva-cli-example/blob/2.0/src/routes/Home/index.jsx#L20);
 2. didMount 里的 [if 处理](https://github.com/ant-motion/ant-motion-dva-cli-example/blob/2.0/src/routes/Home/index.jsx#L29-L37)
