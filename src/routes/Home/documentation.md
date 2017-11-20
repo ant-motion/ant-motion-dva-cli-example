@@ -36,7 +36,7 @@ npm install rc-banner-anim --save;// 如果用的是多屏滑动型的 banner，
 ```
  npm install babel-plugin-import --save-dev;
 ```
-### 7. 运用 "babel-plugin-import" 滤境:
+### 7. 运用 "babel-plugin-import" 滤镜:
 
 > dva-cli: ~0.7.0， 修改 .roadhogrc，在 "extraBabelPlugins" 里加上： ["import", { "libraryName": "antd", "style": true }]
 >  [参考](https://github.com/dvajs/dva-example-user-dashboard/blob/master/.roadhogrc#L20)
@@ -46,7 +46,7 @@ npm install rc-banner-anim --save;// 如果用的是多屏滑动型的 banner，
     ["import", { "libraryName": "antd", "style": true }]
   ],
 ```
-### 8. 配置自定义皮服，[参考](https://ant.design/docs/react/customize-theme-cn) 里面的 package.theme（推荐);
+### 8. 配置自定义皮肤，[参考](https://ant.design/docs/react/customize-theme-cn) 里面的 package.theme（推荐);
 
 ### 9. 在你的 index.html 里的 head 里添加上 
 ```
