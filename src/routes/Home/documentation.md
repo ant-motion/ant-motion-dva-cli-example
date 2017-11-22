@@ -14,14 +14,14 @@ import IndexPage from './routes/Home';
 
  [dva-cli-example](https://github.com/ant-motion/ant-motion-dva-cli-example);
 
- dva-cli ~0.8.0;
+> dva-cli ~0.8.0;
+> 
+> 请不要使用 css-modules, 将在下个版本做混用兼容；
+> 在 .roadhogrc 文件里加上: "disableCSSModules": true,
+>
+> 如果项目已使用 css-modules, 请在项目根目录建 public 目录，这里的文件会被 copy 到输出目录下，然后在 html 文件里引这个文件。
 
- 请不要使用 css-modules, 将在下个版本做混用兼容；
- 在 .roadhogrc 文件里加上: "disableCSSModules": true,
-
- 如果项目已使用 css-modules, 请在项目根目录建 public 目录，这里的文件会被 copy 到输出目录下，然后在 html 文件里引这个文件。
-
- 或在每个 less 里加上 :global, [详细查看](https://github.com/css-modules/css-modules#usage-with-preprocessors);
+> 或在每个 less 里加上 :global, [详细查看](https://github.com/css-modules/css-modules#usage-with-preprocessors);
 
 ### 安装依赖:
 ```
@@ -35,12 +35,14 @@ npm install rc-banner-anim --save;// 如果用的是多屏滑动型的 banner，
 
 ### 按需加载 antd, 安装 babel-plugin-import:
 
+```
 npm install babel-plugin-import --save-dev;
+```
 
 ### 运用 "babel-plugin-import" 滤镜:
 
-  dva-cli: ~0.8.0， 修改 .roadhogrc，在 "extraBabelPlugins" 里加上： ["import", { "libraryName": "antd", "style": true }]
-  [参考](https://github.com/dvajs/dva-example-user-dashboard/blob/master/.roadhogrc#L20)
+> dva-cli: ~0.8.0， 修改 .roadhogrc，在 "extraBabelPlugins" 里加上： ["import", { "libraryName": "antd", "style": true }][参考](https://github.com/dvajs/dva-example-user-dashboard/blob/master/.roadhogrc#L20)
+
 ```
   "extraBabelPlugins": [
     "transform-runtime",
