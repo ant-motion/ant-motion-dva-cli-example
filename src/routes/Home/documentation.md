@@ -20,7 +20,7 @@ import IndexPage from './routes/Home';
 > 在 .roadhogrc 文件里加上: "disableCSSModules": true,
 >
 > 如果项目已使用 css-modules, 请在项目根目录建 public 目录，这里的文件会被 copy 到输出目录下，然后在 html 文件里引这个文件。
-
+>
 > 或在每个 less 里加上 :global, [详细查看](https://github.com/css-modules/css-modules#usage-with-preprocessors);
 
 ### 安装依赖:
