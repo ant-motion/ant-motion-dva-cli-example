@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import enquire from 'enquire.js';
-import { scrollScreen } from 'rc-scroll-anim';
+import ScrollAnim from 'rc-scroll-anim';
 
 import Nav from './Nav';
 import Content0 from './Content0';
@@ -12,6 +12,8 @@ import Footer from './Footer';
 import Point from './Point';
 
 import './less/antMotion_style.less';
+
+const scrollScreen = ScrollAnim.scrollScreen;
 
 export default class Home extends React.Component {
   constructor(props) {

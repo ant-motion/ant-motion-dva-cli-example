@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Link from 'rc-scroll-anim/lib/ScrollLink';
+import ScrollAnim from 'rc-scroll-anim';
 
+const Link = ScrollAnim.Link;
 export default class Point extends React.Component {
   static propTypes = {
     className: PropTypes.string,
@@ -18,7 +19,6 @@ export default class Point extends React.Component {
       if (item.match('nav') || item.match('footer')) {
         return null;
       }
-      console.log(item);
       return (
         <Link
           key={item}
@@ -29,7 +29,9 @@ export default class Point extends React.Component {
       );
     }).filter(item => item);
     return (<div className={`${this.props.className}-wrapper`} style={this.props.style}>
-      {children}
+      <div>
+        {children}
+      </div>
     </div>);
   }
 }
