@@ -12,15 +12,25 @@ import IndexPage from './routes/Home';
 
 ### 4. 如果用的是 antd 的脚手 [dva-cli](https://github.com/dvajs/dva-cli)； dva-cli 的具体教程[请查看](https://github.com/sorrycc/blog/issues/18)，或查看 [dva-cli-example](https://github.com/ant-motion/ant-motion-dva-cli-example);
 
-> dva-cli ~0.8.0;
-> 
-> 请不要使用 css-modules, 将在下个版本做混用兼容；
-> 在 .roadhogrc 文件里加上: "disableCSSModules": true,
->
-> 如果项目已使用 css-modules, 请在项目根目录建 public 目录，这里的文件会被 copy 到输出目录下，然后在 html 文件里引这个文件。
->
-> 或在每个 less 里加上 :global, [详细查看](https://github.com/css-modules/css-modules#usage-with-preprocessors);
-
+#### `dva-cli ~0.8.0` 使用了 css-modules 的解决方案
+ 1. 关闭 css-modules, 在 .roadhogrc 文件里加上: "disableCSSModules": true,
+ 2. 在 antMotion_style.less 里加上 :global, [global 的使用详细查看](https://github.com/css-modules/css-modules#usage-with-preprocessors)，再将 edit.css 改为 edit.less 如下: 
+```css
+:global {
+  @import './global.less';
+  @import './common.less';
+  @import './custom.less';
+  @import './content.less';
+  @import './nav.less';
+  @import './content0.less';
+  @import './content1.less';
+  @import './content2.less';
+  @import './content3.less';
+  @import './footer.less';
+  @import './point.less';
+}
+@import './edit.less';
+```
 ### 5. 安装依赖:
 ```
 npm install antd --save;
