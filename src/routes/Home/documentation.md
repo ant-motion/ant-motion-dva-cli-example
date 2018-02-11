@@ -28,8 +28,9 @@ import IndexPage from './routes/Home';
   @import './content3.less';
   @import './footer.less';
   @import './point.less';
+  @import './edit.less';
 }
-@import './edit.less';
+
 ```
 ### 5. 安装依赖:
 ```
