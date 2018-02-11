@@ -15,7 +15,7 @@ import IndexPage from './routes/Home';
 #### `dva-cli ~0.8.0` 使用了 css-modules 的解决方案
  1. 关闭 css-modules, 在 .roadhogrc 文件里加上: "disableCSSModules": true,
  2. 在 antMotion_style.less 里加上 :global, [global 的使用详细查看](https://github.com/css-modules/css-modules#usage-with-preprocessors)，再将 edit.css 改为 edit.less 如下: 
-```css
+```less
 :global {
   @import './global.less';
   @import './common.less';
