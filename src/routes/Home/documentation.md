@@ -10,7 +10,7 @@
 import IndexPage from './routes/Home';
 ```
 
-### 4. 如果用的是 antd 的脚手 [dva-cli](https://github.com/dvajs/dva-cli)； dva-cli 的具体教程[请查看](https://github.com/sorrycc/blog/issues/18)，或查看 [dva-cli-example](https://github.com/ant-motion/ant-motion-dva-cli-example);
+### 4. 如果用的是 antd 的脚手架 [dva-cli](https://github.com/dvajs/dva-cli)； dva-cli 的具体教程[请查看](https://github.com/sorrycc/blog/issues/18)，或查看 [dva-cli-example](https://github.com/ant-motion/ant-motion-dva-cli-example);
 
 
 #### `dva-cli ~0.8.0` 使用了 css-modules 的两个解决方案如下:
