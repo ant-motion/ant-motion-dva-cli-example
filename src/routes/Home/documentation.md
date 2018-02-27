@@ -12,7 +12,9 @@ import IndexPage from './routes/Home';
 
 ### 4. 如果用的是 antd 的脚手 [dva-cli](https://github.com/dvajs/dva-cli)； dva-cli 的具体教程[请查看](https://github.com/sorrycc/blog/issues/18)，或查看 [dva-cli-example](https://github.com/ant-motion/ant-motion-dva-cli-example);
 
-#### `dva-cli ~0.8.0` 使用了 css-modules 的解决方案
+
+#### `dva-cli ~0.8.0` 使用了 css-modules 的两个解决方案如下:
+
  1. 关闭 css-modules, 在 .roadhogrc 文件里加上: "disableCSSModules": true,
  2. 在 antMotion_style.less 里加上 :global, [global 的使用详细查看](https://github.com/css-modules/css-modules#usage-with-preprocessors)，再将 edit.css 改为 edit.less 如下: 
 ```less
