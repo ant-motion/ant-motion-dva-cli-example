@@ -13,7 +13,7 @@
     "antd": "^2.13.6",
     "babel-runtime": "^6.9.2",
     "dva": "^2.0.3",
-    "enquire": "^0.0.2",
+    "enquire-js": "^0.2.1",
     "rc-banner-anim": "^1.0.0",
     "rc-queue-anim": "1.x",
     "rc-scroll-anim": "2.x",
