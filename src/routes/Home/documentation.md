@@ -36,11 +36,7 @@ import IndexPage from './routes/Home';
 ```
 ### 5. 安装依赖:
 ```
-npm install antd --save;
-npm install enquire-js --save;
-npm install rc-queue-anim --save;
-npm install rc-scroll-anim --save;
-npm install rc-tween-one --save;
+npm install antd enquire-js rc-queue-anim rc-scroll-anim rc-tween-one --save;
 npm install rc-banner-anim --save;// 如果用的是多屏滑动型的 banner，加上这条。
 ```
 
