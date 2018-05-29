@@ -13,7 +13,7 @@ class Content extends React.Component {
 
   render() {
     const props = { ...this.props };
-    delete props.isMode;
+    delete props.isMobile;
     const oneAnim = { y: '+=30', opacity: 0, type: 'from', ease: 'easeOutQuad' };
     const blockArray = [
       { icon: 'https://zos.alipayobjects.com/rmsportal/ScHBSdwpTkAHZkJ.png', title: '企业资源管理', content: '云资源集中编排、弹性伸缩、持续发布和部署，高可用及容灾。' },

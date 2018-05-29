@@ -28,7 +28,10 @@ export default class Point extends React.Component {
         />
       );
     }).filter(item => item);
-    return (<div className={`${this.props.className}-wrapper`} style={this.props.style}>
+    return (<div
+      className={`${this.props.className}-wrapper`}
+      style={this.props.style}
+    >
       <div>
         {children}
       </div>
