@@ -17,7 +17,7 @@
     "rc-banner-anim": "^1.0.0",
     "rc-queue-anim": "1.x",
     "rc-scroll-anim": "2.x",
-    "rc-tween-one": "1.x",
+    "rc-tween-one": "2.x",
     "react": "^15.4.0",
     "react-dom": "^15.4.0"
   },
