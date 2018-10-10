@@ -16,7 +16,7 @@ class Content extends React.Component {
       queue: isMobile ? 'bottom' : 'right',
       one: isMobile ? { y: '+=30', opacity: 0, type: 'from' }
         : { x: '-=30', opacity: 0, type: 'from' },
-    }
+    };
     return (
       <div
         {...props}
